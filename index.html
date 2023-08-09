@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Xd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="menu" class="menu">
+  <div class="content-window2" id="items">
+    <div class="content-window">
+      <p class="plugin-name">Addolás</p>
+      <div class="container">
+        <div class="container__item">
+          <input id="buy-item-m-1-name" type="text" max="10" class="form__field" placeholder="item/money" />
+          <input id="buy-item-m-1-amount" style="width: 80px;" type="number" class="form__field" placeholder="1000" />
+          <button onclick="buy_items_m_1()" class="button-30" role="button">Addol</button>
+        </div>
+      </div>   
+    </div>
+  </div> 
+  <div class="content-window2" id="setting">
+    <div class="content-window">
+      <p class="plugin-name">Beállítás</p>
+      <div class="container">
+        <div class="container__item">
+          <label >
+            <input type="checkbox" name="draggable" />
+            <span>Húzható</span>
+          </label>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div class="content-window2" id="info">
+    <div class="content-window">
+      <p class="plugin-name">Segítség</p>
+      <div class="container">
+        <div class="container__item">
+          <fieldset class="fieldset" style="display: grid;">
+            <legend class="legend">Röviden</legend>
+            <span>Ha pénzt szeretnél: "money",<br>ha itemet, akkor keresd meg a spawn nevét pl. "weapon_pistol"</span>
+          </fieldset>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <ul class="plugins-list">
+    <li>
+      <a class="tab-item" href="#home">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
+    <li>
+      <a class="tab-item" href="#items">
+        <i class="fas fa-store"></i>
+      </a>
+    </li>
+    <li>
+      <a class="tab-item" href="#setting">
+        <i class="fas fa-cog"></i>
+      </a>
+    </li>
+    <li>
+      <a class="tab-item" href="#info">
+        <i class="fas fa-info-circle"></i>
+      </a>
+    </li>
+  </ul>
+  <script src='main.js'></script>
+</div>
+</body>
+</html>
